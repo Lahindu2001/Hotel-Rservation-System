@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+         
+         
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>entryServlet</servlet-name>
+        <servlet-class>hotelReservation.entryServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>entryServlet</servlet-name>
+        <url-pattern>/entryServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>updateServlet</servlet-name>
+        <servlet-class>hotelReservation.updateServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>updateServlet</servlet-name>
+        <url-pattern>/updateServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>deleteServlet</servlet-name>
+        <servlet-class>hotelReservation.deleteServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>deleteServlet</servlet-name>
+        <url-pattern>/deleteServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    
+    
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>hotelReservation.loginServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    
+    
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>profileServlet</servlet-name>
+        <servlet-class>hotelReservation.profileServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>profileServlet</servlet-name>
+        <url-pattern>/profileServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>hotelReservation.logoutServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logoutServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Linuka servlets start from her -->
+     <servlet>
+        <servlet-name>linukaInsertServlet</servlet-name>
+        <servlet-class>hotelReservation.linukaInsertServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>linukaInsertServlet</servlet-name>
+        <url-pattern>/linukaInsertServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    <!-- Linuka servlets start from her -->
+     <servlet>
+        <servlet-name>linukaDeleteServlet</servlet-name>
+        <servlet-class>hotelReservation.linukaDeleteServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>linukaDeleteServlet</servlet-name>
+        <url-pattern>/linukaDeleteServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    
+     <!-- Linuka servlets start from her -->
+     <servlet>
+        <servlet-name>linukaUpdateServlet</servlet-name>
+        <servlet-class>hotelReservation.linukaUpdateServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>linukaUpdateServlet</servlet-name>
+        <url-pattern>/linukaUpdateServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Linuka servlets start from her -->
+     <servlet>
+        <servlet-name>LViewAllGuestsServlet</servlet-name>
+        <servlet-class>hotelReservation.LViewAllGuestsServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LViewAllGuestsServlet</servlet-name>
+        <url-pattern>/LViewAllGuestsServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+         
+        
+    
+     <!-- Linuka servlets start from her -->
+     <servlet>
+        <servlet-name>LViewGuestInquiryServlet</servlet-name>
+        <servlet-class>hotelReservation.LViewGuestInquiryServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LViewGuestInquiryServlet</servlet-name>
+        <url-pattern>/LViewGuestInquiryServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <!-- la servlets start from her -->
+     <servlet>
+        <servlet-name>LViewAllinquiryServlet</servlet-name>
+        <servlet-class>hotelReservation.LViewAllinquiryServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LViewAllinquiryServlet</servlet-name>
+        <url-pattern>/LViewAllinquiryServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+         
+         
+      <servlet>
+        <servlet-name>LallInquiryviewServlet</servlet-name>
+        <servlet-class>hotelReservation.LallInquiryviewServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LallInquiryviewServlet</servlet-name>
+        <url-pattern>LallInquiryviewServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>LdeleteInquiryServlet</servlet-name>
+        <servlet-class>hotelReservation.LdeleteInquiryServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LdeleteInquiryServlet</servlet-name>
+        <url-pattern>/LdeleteInquiryServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>LupdateInquiryServlet</servlet-name>
+        <servlet-class>hotelReservation.LupdateInquiryServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LupdateInquiryServlet</servlet-name>
+        <url-pattern>/LupdateInquiryServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+         
+        <servlet>
+        <servlet-name>LViewAllroomServlet</servlet-name>
+        <servlet-class>hotelReservation.LViewAllroomServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LViewAllroomServlet</servlet-name>
+        <url-pattern>/LViewAllroomServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+          
+         
+       <servlet>
+        <servlet-name>LahinduUpdateServlet</servlet-name>
+        <servlet-class>hotelReservation.LahinduUpdateServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LahinduUpdateServlet</servlet-name>
+        <url-pattern>/LahinduUpdateServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+            
+         
+         
+         <servlet>
+        <servlet-name>LahinduDeleteServlet</servlet-name>
+        <servlet-class>hotelReservation.LahinduDeleteServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LahinduDeleteServlet</servlet-name>
+        <url-pattern>/LahinduDeleteServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+         
+         
+              <servlet>
+        <servlet-name>LahinduInsertServlet</servlet-name>
+        <servlet-class>hotelReservation.LahinduInsertServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LahinduInsertServlet</servlet-name>
+        <url-pattern>/LahinduInsertServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+         
+         
+         <servlet>
+        <servlet-name>lahindurommsmanualInsertServlet</servlet-name>
+        <servlet-class>hotelReservation.lahindurommsmanualInsertServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>lahindurommsmanualInsertServlet</servlet-name>
+        <url-pattern>/lahindurommsmanualInsertServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+         
+         
+              <servlet>
+        <servlet-name>LupdatebookingServlet</servlet-name>
+        <servlet-class>hotelReservation.LupdatebookingServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LupdatebookingServlet</servlet-name>
+        <url-pattern>/LupdatebookingServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+         
+         
+         
+         
+          <servlet>
+        <servlet-name>LahinduinsertBokkingServlet</servlet-name>
+        <servlet-class>hotelReservation.LahinduinsertBokkingServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>LahinduinsertBokkingServlet</servlet-name>
+        <url-pattern>/LahinduinsertBokkingServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+         
+         
+         
+         <servlet>
+        <servlet-name>lahinduGuestinsertServlet</servlet-name>
+        <servlet-class>hotelReservation.lahinduGuestinsertServlet</servlet-class>
+        <load-on-startup>1</load-on-startup> <!-- Optional: loads the servlet when the application starts -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>lahinduGuestinsertServlet</servlet-name>
+        <url-pattern>/lahinduGuestinsertServlet</url-pattern> <!-- URL pattern for this servlet -->
+    </servlet-mapping>    
+         
+         
+         
+       
+         
+</web-app>

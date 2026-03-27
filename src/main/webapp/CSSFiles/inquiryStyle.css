@@ -1,0 +1,243 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Header Styling - Reduced size */
+.page-header {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 600% 600%;
+    animation: gradientBG 15s ease infinite;
+    padding: 40px 0; /* Reduced from 60px */
+    text-align: center;
+    color: white;
+    margin-bottom: 30px; /* Reduced from 40px */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.page-header h1 {
+    font-size: 28px; /* Reduced from 36px */
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header p {
+    font-size: 16px; /* Reduced from 18px */
+    margin-top: 8px; /* Reduced from 10px */
+    max-width: 600px; /* Reduced from 700px */
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+/* Inquiries Container - More compact */
+#inquiries-container {
+    width: 75%; /* Reduced from 85% */
+    max-width: 900px; /* Reduced from 1200px */
+    margin: 0 auto 40px; /* Reduced bottom margin from 60px */
+    padding: 0 15px; /* Reduced from 20px */
+}
+
+#inquiries-title {
+    text-align: center;
+    margin-bottom: 30px; /* Reduced from 40px */
+    font-size: 28px; /* Reduced from 32px */
+    color: #2c3e50;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px; /* Reduced from 15px */
+}
+
+#inquiries-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Reduced from 80px */
+    height: 3px;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f);
+}
+
+/* Inquiry Card Styling - More compact */
+.inquiry-card {
+    border-radius: 10px; /* Reduced from 12px */
+    padding: 20px 25px; /* Reduced from 30px */
+    margin-bottom: 20px; /* Reduced from 30px */
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #1a2a6c; /* Reduced from 5px */
+    position: relative;
+    overflow: hidden;
+}
+
+.inquiry-card:hover {
+    transform: translateY(-3px); /* Reduced from -5px */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry-card h3 {
+    margin-top: 0;
+    color: #1a2a6c;
+    font-size: 20px; /* Reduced from 22px */
+    font-weight: 600;
+    margin-bottom: 20px; /* Reduced from 25px */
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 12px; /* Reduced from 15px */
+}
+
+/* Form Styling - More compact grid */
+.inquiry-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* Reduced from 20px */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Reduced from 20px */
+}
+
+.inquiry-body label {
+    display: block;
+    margin-bottom: 6px; /* Reduced from 8px */
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 14px; /* Reduced from 15px */
+}
+
+.inquiry-body input,
+.inquiry-body select,
+.inquiry-body textarea {
+    width: 100%;
+    padding: 10px 12px; /* Reduced from 12px 15px */
+    border: 1px solid #e2e8f0;
+    border-radius: 6px; /* Reduced from 8px */
+    font-size: 15px; /* Reduced from 16px */
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+    color: #2d3748;
+    font-family: inherit;
+}
+
+.inquiry-body input:focus,
+.inquiry-body select:focus,
+.inquiry-body textarea:focus {
+    border-color: #4299e1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+    background-color: #fff;
+}
+
+.inquiry-body select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23718096' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center; /* Adjusted from 15px */
+    padding-right: 36px; /* Reduced from 45px */
+}
+
+.inquiry-body textarea {
+    height: 120px; /* Reduced from 150px */
+    resize: vertical;
+    grid-column: span 2;
+}
+
+/* Full width for message textarea */
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Button Styling - More compact */
+.inquiry-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px; /* Reduced from 15px */
+    margin-top: 20px; /* Reduced from 25px */
+    border-top: 1px solid #eaeaea;
+    padding-top: 15px; /* Reduced from 20px */
+}
+
+.inquiry-actions button {
+    padding: 10px 20px; /* Reduced from 12px 24px */
+    border: none;
+    color: white;
+    border-radius: 6px; /* Reduced from 8px */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px; /* Reduced from 16px */
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px; /* Reduced from 120px */
+}
+
+.inquiry-actions button i {
+    margin-right: 6px; /* Reduced from 8px */
+    font-size: 14px; /* Added to keep icons proportionate */
+}
+
+.inquiry-actions button.update-btn {
+    background-color: #4299e1;
+    box-shadow: 0 3px 5px rgba(66, 153, 225, 0.2); /* Reduced shadow */
+}
+
+.inquiry-actions button.update-btn:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+}
+
+.inquiry-actions button.delete-btn {
+    background-color: #f56565;
+    box-shadow: 0 3px 5px rgba(245, 101, 101, 0.2); /* Reduced shadow */
+}
+
+.inquiry-actions button.delete-btn:hover {
+    background-color: #e53e3e;
+    transform: translateY(-2px);
+}
+
+/* No Inquiries Section - More compact */
+#no-inquiries {
+    text-align: center;
+    padding: 40px 25px; /* Reduced from 60px 30px */
+    background-color: #fff;
+    border-radius: 10px; /* Reduced from 12px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+#no-inquiries p {
+    font-size: 16px; /* Reduced from 18px */
+    color: #718096;
+    margin-bottom: 20px; /* Reduced from 25px */
+}
+
+.create-inquiry-btn {
+    display: inline-block;
+    padding: 12px 24px; /* Reduced from 14px 28px */
+    background: linear-gradient(to right, #4299e1, #667eea);
+    color: white;
+    border-radius: 6px; /* Reduced from 8px */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(66, 153, 225, 0.3); /* Reduced shadow */
+}
+
+.create-inquiry-btn:hover {
+    transform: translateY(-2px); /* Reduced from -3px */
+    box-shadow: 0 4px 8px rgba(66, 153, 225, 0.4); /* Reduced shadow */
+}
